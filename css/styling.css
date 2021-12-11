@@ -197,7 +197,7 @@
     border: none;
 }
 
-#btn label
+#btn #Resume
 {
     margin: 25px;
     font-size: 15px;
@@ -213,7 +213,7 @@
     background-color:#1abc9c;
 }
 
-#btn label:hover 
+#btn #Resume:hover 
 {
     background-color:#1abc9c;
 }
