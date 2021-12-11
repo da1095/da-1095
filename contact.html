@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WEB 222 Final Assesment</title>
+</head>
+<link rel="stylesheet" href="css/styling.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/final.js"></script>
+<body>
+    <div class="header">
+        <h1 id="MainHead">
+            Want to get in touch with me?
+        </h1>
+    </div>
+
+    <ul id="Menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myinfo.html" >About me</a></li>
+        <li><a href="interest.html" >Interests and Hobbies</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+
+    <h3 id="Form_tittle">
+      <b>
+        Please fill this form
+      </b>
+    </h3>
+
+    <div class="form">
+        <form id="form_ref" method = "post" action="https://httpbin.org/post">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email Addres</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="Email" name="email" placeholder="something@domain.com" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="address">Address</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Address" name="Address" placeholder="Your address.." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="city">City</label>
+            </div>
+            <div class="col-75">
+            <select id="city" name="city">
+                <option value="Toronto">Toronto</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Montreal">Montreal</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Calgary">Calgary</option>
+                <option value="Halifax">Halifax</option>
+                <option value="Wiinipeg">Winnipeg</option>
+                <option value="Victoria">Victoria</option>
+                <option value="St Jhon's">St Jhon's</option>
+                <option value="Niagra Falls">Niagra Falls</option>
+                <option value="Windsor">Windsor</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Pcode">Postal Code</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="P_code" name="Pcode" placeholder="A1B 2C3" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <input type="radio" id="que" name="opt" value="Questions?" checked onclick="nohiring();">
+            </div>
+
+            <div class="col-75">
+              <label for="que">Questions?</label><br>
+            </div>
+
+            <div class="col-25">
+              <input type="radio" id="comment" name="opt" value="Comments" onclick="nohiring();">
+            </div>
+            
+            <div class="col-75">
+              <label for="comment">Comment</label><br>
+            </div> 
+
+            <div class="col-25">
+              <input type="radio" id="hire" name="opt" value="Hiring" onclick="onhiring();">
+            </div>
+            
+            <div class="col-75">
+              <label for="hire">Hiring</label><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <div id= "hire_tittle"></div> 
+            </div>
+            <div class="col-75">
+              <!-- here goes the hour rate for salary when hire is choosen -->
+              <div id= "hire_rate"></div> 
+            </div> 
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="Message" name="Message" placeholder="Your message.." style="height:200px"></textarea>
+            </div>
+          </div>
+       
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="StuNAME"></label>
+            </div>
+            <div class="col-75">
+              <input type="hidden" id="StuNAME" name="StuNAME" value="Devang Ramubhai Ahir Ahir">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="StuID"></label>
+            </div>
+            <div class="col-75">
+              <input type="hidden" id="StuID" name="StuID" value="153484209">
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      
+</body>
+<footer>
+    <div class="center">
+        &copy; Devang Ramubhai Ahir Ahir
+    </div>
+</footer>
+</html>

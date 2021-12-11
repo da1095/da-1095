@@ -1,0 +1,344 @@
+/* homepage */
+.header
+{
+    padding: 60px;
+    background: #1abc9c;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#Menu 
+{
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    cursor: pointer;
+}
+  
+#Menu li 
+{
+    display: inline;
+    text-decoration: none;
+}
+
+#Menu li a 
+{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#Menu li a:hover 
+{
+    background-color:#1abc9c;
+}
+
+.opening
+{
+    font-family: 'Corinthia', cursive;
+    position:relative;
+    height: 50vh; /* viewport height*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo 
+{
+    max-width: 100%;
+    letter-spacing: 5px;
+    font-size: 5rem;
+    position: absolute;
+    animation: titulo 15s infinite ease-in-out;
+}
+
+.titulo:nth-child(1)
+{
+    animation-delay: -15s;
+    color: #1abc9c;
+}
+
+.titulo:nth-child(2)
+{
+    animation-delay: -11s;
+    color: #333;
+}
+
+.titulo:nth-child(3)
+{
+    animation-delay: -7s;
+    color: #1abc9c;
+}
+
+.titulo:nth-child(4)
+{
+    animation-delay: -3s;
+    color: #333;
+}
+
+@keyframes titulo 
+{
+ 0%, 5%, 100%
+ {
+     filter: blur(0px);
+     opacity: 1;
+ } 
+ 20%, 80%
+ {
+    filter: blur(35px);
+    opacity: 0;
+ }  
+}
+
+
+/* info page*/
+#foto
+{
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container 
+{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#info p
+{
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+#aboutme
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+#aboutme a
+{
+    text-decoration: none;
+}
+
+.container1
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container2
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#education
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+#education #edu1
+{
+    border-style: solid;
+    color: white;
+    background-color: #1abc9c;
+}
+
+#eduTitle1
+{
+    text-decoration: underline;
+}
+
+
+#education #edu2
+{
+    border-style: solid;
+    color: white;
+    background-color: #333;
+}
+
+#eduTitle2
+{
+    text-decoration: underline;
+}
+
+
+#btn 
+{
+    text-align: center;
+}
+
+#btn button
+{
+    margin: 25px;
+    font-size: 15px;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+}
+
+#btn label
+{
+    margin: 25px;
+    font-size: 15px;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+}
+
+#btn button:hover 
+{
+    background-color:#1abc9c;
+}
+
+#btn label:hover 
+{
+    background-color:#1abc9c;
+}
+
+
+/*interest page*/
+
+#interest h2
+{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+#interest blockquote
+{
+    font-family: 'Meow Script', cursive;
+}
+/* contact page */
+#Form_tittle
+{
+    text-align: center;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email], select, textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label 
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.Form 
+{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+  .col-75 
+{
+    float: left;
+    width: 55%;
+    margin-top: 6px;
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px) 
+{
+    .col-25, .col-75, input[type=submit] 
+    {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+input[type=submit] 
+{
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover
+{
+    background-color:#1abc9c;
+}
+
+
+
+/* for the footer*/
+footer
+{
+	display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-flow: row wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #333; 
+}
+
+.center > * 
+{
+    flex:  1 100%;
+}
